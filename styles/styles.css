@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
 header {
   padding: 20px;
   background: linear-gradient(to right, #55a2c5, #89cff0);
@@ -53,55 +58,56 @@ section {
   padding: 50px;
 }
 
-.product-card-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  place-items: center;
-}
-.product-card-container .product-card {
-  border-radius: 8px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  display: flex;
-  flex-direction: column;
-  width: 18rem;
-}
-.product-card-container .product-card .item-image {
-  margin-bottom: 16px;
-  width: 100%;
-}
-.product-card-container .product-card .information-container {
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-top: 1px solid lightgray;
-}
-.product-card-container .product-card button {
-  background-color: #55a2c5;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-.product-card-container .product-card button:hover {
-  transition: 0.3s;
-  background-color: #89cff0;
+.container {
+  max-width: 100rem;
+  margin-inline: auto;
+  padding: 2rem 0;
 }
 
-@media screen and (max-width: 1200px) {
-  .product-card-container {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-  }
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 8px;
 }
-@media screen and (max-width: 950px) {
-  .product-card-container {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
+
+.product-card {
+  aspect-ratio: 1/1.5;
 }
+
+.stacked {
+  display: grid;
+}
+
+.stacked > * {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.product-img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.product-content {
+  background: white;
+  align-self: end;
+  margin: 0.5rem 0.5rem 4rem;
+  padding: 0.5rem;
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.product-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: firebrick;
+}
+
+.product-price {
+  font-size: 1.75rem;
+}
+
 @media screen and (max-width: 650px) {
   .header-title {
     font-size: 20px;
