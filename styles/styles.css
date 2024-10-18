@@ -44,10 +44,13 @@ header .contact-text {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: sticky;
+  top: 0;
 }
 .sub-header .sub-header-item {
   color: white;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .hero {
