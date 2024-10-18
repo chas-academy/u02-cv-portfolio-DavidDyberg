@@ -35,6 +35,8 @@ header .logo-wrapper {
 }
 header .contact-text {
   font-weight: bold;
+  text-decoration: none;
+  color: white;
 }
 
 .sub-header {
@@ -145,6 +147,25 @@ section {
 
 .product-description {
   margin-top: 0.5rem;
+}
+
+footer {
+  background-color: #0a142f;
+  color: white;
+  height: 200px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+footer .footer-content table {
+  width: 100%;
+  border-collapse: collapse;
+}
+footer .footer-content table td {
+  padding: 10px;
+  border: 1px solid white;
 }
 
 @media screen and (max-width: 650px) {
