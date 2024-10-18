@@ -26,6 +26,8 @@ header {
 
   .contact-text {
     font-weight: bold;
+    text-decoration: none;
+    color: white;
   }
 }
 
@@ -142,6 +144,30 @@ section {
 
 .product-description {
   margin-top: 0.5rem;
+}
+
+footer {
+  background-color: $bgColorDarkBlue;
+  color: white;
+  height: 200px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+  .footer-content {
+    table {
+      width: 100%;
+
+      border-collapse: collapse;
+
+      td {
+        padding: 10px;
+        border: 1px solid white;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 650px) {
