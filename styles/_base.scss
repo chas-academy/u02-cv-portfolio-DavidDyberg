@@ -1,3 +1,5 @@
+$fontTitle: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
 * {
   margin: 0;
   padding: 0;
@@ -7,4 +9,14 @@
 img {
   max-width: 100%;
   display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $fontTitle;
+  font-weight: bold;
 }
