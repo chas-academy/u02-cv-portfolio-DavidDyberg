@@ -41,6 +41,8 @@ header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  z-index: 1;
+
   .sub-header-item {
     color: white;
     font-weight: bold;
@@ -50,7 +52,6 @@ header {
 
 .hero {
  position: relative;
-z-index: -1;
 
   video {
     min-width: 100%;
@@ -72,10 +73,6 @@ z-index: -1;
     
   }
 }
-
-
-
-
 
 section {
   padding: 50px;
