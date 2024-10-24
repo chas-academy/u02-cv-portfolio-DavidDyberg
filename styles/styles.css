@@ -55,6 +55,7 @@ header .contact-text {
   color: white;
   font-weight: bold;
   text-decoration: none;
+  font-size: 1rem;
 }
 
 .hero {
@@ -77,7 +78,7 @@ header .contact-text {
   width: 100%;
   text-align: center;
   color: white;
-  font-size: 32px;
+  font-size: 2rem;
 }
 
 section {
@@ -187,7 +188,7 @@ footer .footer-content table td {
 
 @media screen and (max-width: 650px) {
   .header-title {
-    font-size: 20px;
+    font-size: 1rem;
   }
   .logo {
     width: 50px;
