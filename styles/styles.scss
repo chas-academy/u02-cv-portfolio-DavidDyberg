@@ -109,7 +109,7 @@ section {
 
 .product-img {
   width: 100%;
-  aspect-ratio: 1/1;
+  aspect-ratio: 1/2;
   object-fit: contain;
   border-radius: 8px 8px 0 0;
 }
@@ -176,7 +176,6 @@ footer {
   .footer-content {
     table {
       width: 100%;
-
       border-collapse: collapse;
 
       td {
