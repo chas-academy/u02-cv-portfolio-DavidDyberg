@@ -83,6 +83,7 @@ header .contact-text {
 
 section {
   padding: 50px;
+  scroll-margin-top: 30px;
 }
 @media (max-width: 768px) {
   section {
